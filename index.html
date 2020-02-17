@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pagina estilo Flyer Efecto texto Neon</title>
+
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800&display=swap" rel="stylesheet">
+ 
+</head>
+<body>
+    <header class="contenido-encabezado" id="contenido-encabezado">
+        <div class="texto-encabezado">
+            <p class="icono">
+                <i class="fas fa-glass-cheers"></i>
+            </p>
+            <h1 class="titulo">
+                Bohemiam bar<br>¡Entra!<br>
+                <span class="titulo-naranja-neon texto-regular">50% de Descuento</span>
+            </h1>
+            <p class="descripcion">
+                Tenemos nueva sucursal<br>
+                Por apertura todas las bebidas a mitad <br>
+                de precio en Av Lorem 28-B, Col. Centro, Ipsum.
+            </p>
+            <a href="#" class="btn-link texto-regular">Más información</a>
+        </div>
+    </header>
+    
+    <main>
+        <section class="contenedor">
+            <h2 class="subtitulo-h2">Servicios</h2>
+            <p>
+                <span class="letra-capital">P</span>ara despejar la cabeza lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni debitis nobis inventore voluptatibus, eveniet suscipit a quasi esse iste quis in iusto dolor, ratione ipsa eligendi ipsam modi excepturi vel.
+            </p>
+
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro animi non nobis unde cumque dolore, repudiandae nostrum dolorem exercitationem facere sequi voluptatum qui ratione repellat eligendi autem provident! Suscipit unde magnam quas, nesciunt culpa nam dolorem consequuntur eos voluptatem magni dignissimos officia tempora harum illo.
+            </p>
+
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem fuga culpa quasi consectetur enim, et sed, neque nemo nihil vero harum! Doloribus quaerat soluta eos?
+            </p>
+        </section>
+    </main>
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/b60c38e26d.js"></script>
+    
+    <script>
+        window.addEventListener('scroll', function() {
+            const header = document.getElementById('contenido-encabezado');
+
+            header.style.opacity = "1" - pageYOffset / 650;
+        });
+    </script>
+
+</body>
+</html>
